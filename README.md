@@ -18,6 +18,8 @@ Before diving head first into the data and producing large correlation matrices,
 ## 📊 **Data**
 The dataset has **74112 rows** and **28 columns** which includes many features such as: number of beds, number of guests allowed, description, number of reviews, and many more. For a more detailed preview into the features and the data, see the dataset [here](https://www.kaggle.com/datasets/stevezhenghp/airbnb-price-prediction)
 
+## 📑 **Data Dictionary**
+  - id
 ## 📈 **Model**
 The business question falls into the category of supervised machine learning for predicting continuous values, so linear regression models were used.
 
