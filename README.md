@@ -29,7 +29,8 @@ If you would like to download and run all the data analysis and prediction model
   - [Matplotlib](https://matplotlib.org/) - Used for graph plots and visualizations.
   - [Python NLTK](https://www.nltk.org/) - Used during exploratory analysis to get further insights into the textual data.
 
-
+## 🪪 **License**
+This project is licensed under the [License](https://opensource.org/license/mit)
 
 
 
