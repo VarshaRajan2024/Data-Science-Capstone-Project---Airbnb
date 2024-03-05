@@ -1,4 +1,6 @@
-![image](https://github.com/VarshaRajan2024/Data-Science-Capstone-Project---Airbnb/assets/158431807/52359779-1093-4378-b48c-b36c517fcd96)
+![image](https://pluspng.com/img-png/airbnb-logo-png-airbnb-logo-1600.png)
+
+
 
 # **Airbnb Price Prediction**
 What dictates Airbnb rental price in USA? Is it the
