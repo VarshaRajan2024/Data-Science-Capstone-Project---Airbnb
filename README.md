@@ -16,7 +16,7 @@ The answer to this question provides interesting insights that can benefit a hos
 Before diving head first into the data and producing large correlation matrices, I always try to think of the question and get a sense of the features. Why am I doing this analysis? What’s the goal? What relationships between features and the target variable make sense?
 
 ## 📊 **Data**
-The dataset has **74112 rows** and **29 columns** which includes many features such as: number of beds, number of guests allowed, description, number of reviews, and many more. For a more detailed preview into the features and the data, see the dataset [here](https://www.kaggle.com/datasets/stevezhenghp/airbnb-price-prediction)
+The dataset has **74112 rows** and **29 columns** which includes many features such as: number of beds, number of guests allowed, description, number of reviews, and many more.
 
 ## 📑 **Data Dictionary**
   - `id` : Unique identifier for each Airbnb listing. (int64)
