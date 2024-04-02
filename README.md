@@ -31,7 +31,7 @@ Before diving head first into the data and producing large correlation matrices,
 
 
 ## 📊 **Data**
-The dataset has **74112 rows** and **29 columns** which includes many features such as: number of beds, number of guests allowed, description, number of reviews, and many more.
+The dataset has **74111 rows** and **29 columns** which includes many features such as: number of beds, number of guests allowed, description, number of reviews, and many more.
 
 ## 📑 **Data Dictionary**
   - `id` : Unique identifier for each Airbnb listing. (int64)
