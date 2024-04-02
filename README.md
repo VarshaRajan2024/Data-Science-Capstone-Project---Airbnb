@@ -20,9 +20,9 @@ Before diving head first into the data and producing large correlation matrices,
 2. The dataset
 3. Cleaning and pre-processing
 4. Exploratory data analysis
- - Numerical features
- - Categorical features
- - Correlation Matrix
+     - Numerical features
+     - Categorical features
+     - Correlation Matrix
 5. Preparing the data for modeling
 6. Linear Regression
 7. Random Forest Regressor
