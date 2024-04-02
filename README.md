@@ -50,10 +50,12 @@ The dataset has **74112 rows** and **29 columns** which includes many features s
   - `beds` : Number of beds. (float64)
 
 ## 📈 **Model**
-The business question falls into the category of supervised machine learning for predicting continuous values, so linear regression models were used.
+The business question falls into the category of supervised machine learning for predicting continuous values, so **Linear Regression** models are used as the baseline model. Other than that, advanced machine learning model like **Random Forest Regressor** and deep learning **Multi-Layer Perceptron/Neural Network** models are also used.
 
 ## 🚀 **Getting Started**
-If you would like to download and run all the data analysis and prediction models on your own machine, it is recommended to use to **Anaconda** and **Jupyter Notebook**. If you use Anaconda most of the packages used in this project are pre-installed.
+If you would like to download and run all the data analysis and prediction models on your own machine, it is recommended to use to **Anaconda** and **Jupyter Notebook**. If you use Anaconda most of the packages used in this project are pre-installed except the following:
+ - [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
+ - Tensorflow
 
 ## 🛠️ **Built With**
   - [Python 3](http://www.python.org/) - Main programming language used, done in Jupyter Notebook.
