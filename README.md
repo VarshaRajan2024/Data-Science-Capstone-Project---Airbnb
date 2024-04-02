@@ -15,6 +15,21 @@ The answer to this question provides interesting insights that can benefit a hos
 
 Before diving head first into the data and producing large correlation matrices, I always try to think of the question and get a sense of the features. Why am I doing this analysis? What’s the goal? What relationships between features and the target variable make sense?
 
+## 🔠 **Table Of Content**
+1. Introduction and project aims
+2. The dataset
+3. Cleaning and pre-processing
+4. Exploratory data analysis
+ - Numerical features
+ - Categorical features
+ - Correlation Matrix
+5. Preparing the data for modeling
+6. Linear Regression
+7. Random Forest Regressor
+8. Neural Network
+9. Conclusion & Recomendations      
+
+
 ## 📊 **Data**
 The dataset has **74112 rows** and **29 columns** which includes many features such as: number of beds, number of guests allowed, description, number of reviews, and many more.
 
@@ -55,17 +70,22 @@ The business question falls into the category of supervised machine learning for
 ## 🚀 **Getting Started**
 If you would like to download and run all the data analysis and prediction models on your own machine, it is recommended to use to **Anaconda** and **Jupyter Notebook**. If you use Anaconda most of the packages used in this project are pre-installed except the following:
  - [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
- - Tensorflow
+ - [Tensorflow](https://www.tensorflow.org/resources/libraries-extensions)
 
 ## 🛠️ **Built With**
   - [Python 3](http://www.python.org/) - Main programming language used, done in Jupyter Notebook.
   - [Pandas](https://pandas.pydata.org/) - Main library used to manipulate the datasets.
   - [Scikit-learn](https://scikit-learn.org/stable/) - Main library used for machine learning.
   - [Matplotlib](https://matplotlib.org/) - Used for graph plots and visualizations.
-  - [Python NLTK](https://www.nltk.org/) - Used during exploratory analysis to get further insights into the textual data.
+  - [TreeInterpreter](https://pypi.org/project/treeinterpreter/) - Used to decompose predictions into a sum of contributions from each feature.
+
+## 👩‍💻 **Developer**
+Varsha Rajan
 
 ## 🪪 **License**
 This project is licensed under the [License](https://opensource.org/license/mit)
+
+
 
 
 
