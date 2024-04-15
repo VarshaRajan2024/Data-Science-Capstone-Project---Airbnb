@@ -78,6 +78,7 @@ If you would like to download and run all the data analysis and prediction model
   - [Scikit-learn](https://scikit-learn.org/stable/) - Main library used for machine learning.
   - [Matplotlib](https://matplotlib.org/) - Used for graph plots and visualizations.
   - [TreeInterpreter](https://pypi.org/project/treeinterpreter/) - Used to decompose predictions into a sum of contributions from each feature.
+  - [Neural Network](https://www.tensorflow.org/guide/keras/) - Used for various neural network models.
 
 ## 👩‍💻 **Developer**
 Varsha Rajan
