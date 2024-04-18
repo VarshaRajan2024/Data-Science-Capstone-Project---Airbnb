@@ -1,0 +1,82 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import pickle
+import joblib
+from joblib import load
+# Function to preprocess input features and make predictions
+def predict_price(features):
+    # Preprocess the input features
+    input_df = pd.DataFrame([features])
+    # Load the trained model
+    #with open('final_random_forest_model.pkl','rb') as f:
+        #loaded_model = pickle.load(f)
+    model = joblib.load('final_linear_model_latest.pkl')
+    # Make predictions using the trained model
+    prediction = model.predict(input_df)
+    
+    # Multiply prediction by 100
+    prediction = '$' + str(prediction * 100)
+    
+    return prediction
+def main():
+    
+    st.set_page_config(
+    page_title="Airbnb Price Prediction 🫠",
+    page_icon="💸")
+    
+    st.markdown("<h1 style='color: red;'>Airbnb Price Prediction in USA</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: red;'>Data Science Project by Varsha Rajan</h2>", unsafe_allow_html=True)
+    st.image("Logowide.png", width=600)
+    #st.image("Logowide.png", use_column_width=True)
+    # Create input fields for the user to enter features
+    st.sidebar.title('Airbnb')
+    st.sidebar.write('Airbnb is an online platform that facilitates short-term lodging rentals, connecting hosts with guests seeking accommodations.')
+    st.sidebar.title('Labels to fill in')
+    st.sidebar.markdown(
+    """
+    Room Type:
+        \n\t0 - Entire House
+        \n\t1 - Private Room
+        \n\t2 - Shared Room
+    """
+)
+    st.sidebar.write(
+    """    
+    Latitude and Longitude:
+        \n\t42.3,-71.04-->Boston
+        \n\t41.9,-87.69-->Chicago
+        \n\t38.9,-77-->DC
+        \n\t33.9,-118.4-->Los Angeles
+        \n\t40.6,-73.9-->New York
+        \n\t37.7,-122.4-->San Francisco
+    """
+ )   
+    #st.markdown("<p style='color: red;'>Room Type: Entire House = 0, Private Room = 1, Shared Room = 2</p>", unsafe_allow_html=True)
+
+    
+
+    room_type = st.selectbox('Room Type', ['0', '1', '2'])
+    # Drop-down for latitude:
+    latitude_options = ['42.3', '41.9', '38.9', '33.9', '40.6', '37.7']
+    latitude = st.selectbox('Latitude', latitude_options)
+    # Input field for longitude:
+    longitude_options = ['-71.04', '-87.69', '-77', '-118.4', '-73.9', '-122.4']
+    longitude = st.selectbox('Longitude', longitude_options)
+    accommodates = st.number_input('accommodates', min_value=1)
+    bathrooms = st.number_input('Bathrooms', min_value=0)
+    bedrooms = st.number_input('Bedrooms', min_value=0)
+    # Collect input features into a dictionary
+    input_features = {'room_type': room_type,
+                      'latitude': latitude,
+                      'longitude': longitude,
+                      'accommodates': accommodates,
+                      'bathrooms': bathrooms,
+                      'bedrooms': bedrooms,
+                      }
+    # Predict Airbnb price
+    if st.button('Predict'):
+        prediction = predict_price(input_features)
+        st.write('Predicted Price:', prediction)
+if __name__ == '__main__':
+    main()
